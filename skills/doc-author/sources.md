@@ -677,3 +677,113 @@ behind it.
 - Whether Keep a Changelog 1.1.2 is a spec version; Google's current
   contractions rule; Microsoft's own notes-and-tips page (404).
 - A Diátaxis-vs-CTRT comparison from a primary source (none found).
+
+## doc-author, outline, notes — notes-versus-docs pass (2026-11-02)
+
+Subject-matter sources for the pass that rewrote doc-author as the one
+documents skill (platform docs plus the software-docs reference), created
+the outline platform skill, added the shared note-or-doc table to notes, and
+gave eight producing skills a `notes-skill` or `docs-skill` key. Read by the
+lead unless marked "strand": a strand is a fresh-context subagent of the
+same session that returned claim records with verbatim quotes and URLs, and
+the lead did not open that page.
+
+Moved from the shared ledger on 2026-11-03; entries keep their original wording and dates.
+
+### Luhmann, "Communicating with Slip Boxes" (1981, Kuehn translation)
+- URL: https://luhmann.surge.sh/communicating-with-slip-boxes
+- Last verified: 2026-11-02 (fetched; the three quotes below confirmed exact)
+- Supports: a note is upstream material and a publication is composed, not
+  copied — "Theoretical publications do therefore not result from simply
+  copying what can already be found in the slip box"; the slip box is "a
+  kind of secondary memory ... an alter ego"; a note "receives its quality
+  only from the network of links and back-links". Grounds note-or-doc.md
+  rule 3 (a note becomes a doc by composition, not by moving).
+
+### NARA, General Records Schedule 5.2 FAQs (transitory and intermediary records)
+- URL: https://www.archives.gov/records-mgmt/grs/faqs-for-grs-5-2
+- Last verified: 2026-11-02 (fetched; page updated June 2023, reviewed
+  2024-06-14)
+- Supports: use, not polish, makes a record — "If it is used for
+  decision-making or taking action, it is a record"; "Transitory records are
+  required for only a short time (generally less than 180 days)";
+  "Intermediary records exist to create subsequent records." Grounds the
+  note-or-doc table's "What is it for?" row and the "when in doubt" line.
+
+### Forte Labs, "The CODE method" (basboverview)
+- URL: https://fortelabs.com/blog/basboverview/
+- Last verified: 2026-11-02 (fetched; published 2023-05-01, updated
+  2023-11-23)
+- Supports: Express as the output stage — "the true purpose of learning is
+  to turn our knowledge into effective action"; the page names no single
+  audience. Grounds "one piece of work can yield both" (note-or-doc.md rule
+  2) together with Forte's intermediate-packets post (strand).
+
+### Anthropic, "Writing effective tools for agents"
+- URL: https://www.anthropic.com/engineering/writing-tools-for-agents
+- Last verified: 2026-11-02 (fetched; published 2025-09-11)
+- Supports: "Make sure each tool you build has a clear, distinct purpose";
+  "When tools overlap in function or have a vague purpose, agents can get
+  confused about which ones to use"; "More tools don't always lead to better
+  outcomes." Negative: the sentence "If a human engineer can't definitively
+  say which tool should be used" is NOT on this page (a strand attributed
+  it to the context-engineering post; not re-read by the lead, so not
+  relied on). Grounds keeping notes and docs as two skills whose
+  descriptions name the boundary, rather than a front door that overlaps
+  every writer skill.
+
+### Notion Engineering, "Building Shared Memory for AI Agents in Notion"
+- URL: https://www.notion.com/blog/building-shared-memory-for-ai-agents-in-notion
+- Last verified: 2026-11-02 (fetched; Hesham Salman, published 2026-08-18;
+  all five quotes confirmed exact)
+- Supports (one vendor's own vault; tier 3 measured on their system): the
+  contamination of a shared store by agent scratch — "15%-20% were likely
+  duplicates or near-duplicates", "3-5% were session notes", "The first bad
+  version of a memory system is a junk drawer with an API", "By default,
+  facts expire", "Memory is something that must be periodically
+  maintained". Grounds note-or-doc.md rule 1 (scratch is neither) and the
+  outline skill's archive-as-end-state rule.
+
+### Skill authoring best practices — additions read this pass
+- URL: https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices
+- Last verified: 2026-11-02 (re-fetched in full, raw markdown, for this
+  pass; see the core entry above for the standard sections). Read for this
+  pass, verbatim: the "Conditional workflow pattern" — "1. Determine the
+  modification type: Creating new content? → Follow 'Creation workflow'
+  below. Editing existing content? → Follow 'Editing workflow' below"; its
+  tip — "If workflows become large or complicated with many steps, consider
+  pushing them into separate files and tell Claude to read the appropriate
+  file based on the current task"; "Claude uses it to choose the right Skill
+  from potentially 100+ available Skills"; and the naming section's
+  "Overly generic: `documents`, `data`, `files`". The page states no rule on
+  when to split one skill into two. Grounds the doc-author shape: one
+  SKILL.md that routes by kind, with the software-docs body as a reference
+  file, and the decision to keep the name doc-author rather than `docs`.
+
+### Strand-read sources (claim records only; pages not opened by the lead)
+- Diátaxis, start here — https://diataxis.fr/start-here/ ; four types by
+  user need; nothing on working notes or drafts (negative finding).
+- The National Archives (UK), Essential Records Management (PDF, 2009) —
+  https://cdn.nationalarchives.gov.uk/documents/essential-records-management.pdf ;
+  ISO 15489 definition of a record; capture into the filing structure is
+  the dividing act; a personal mailbox "treated as an individually owned
+  asset".
+- GitLab handbook usage and handbook-first pages — search summaries only;
+  the page body could not be fetched in four attempts (navigation only).
+  "if the content is meant to be long lived it should be moved to the
+  handbook as an SSOT". Not relied on beyond corroboration.
+- Basecamp, How we communicate — https://basecamp.com/guides/how-we-communicate ;
+  "Writing solidifies, chat dissolves"; "Where you put something, and what
+  you call it, matters."
+- Ubl, Design Docs at Google (2020-07-06) —
+  https://www.industrialempathy.com/posts/design-docs-at-google/ ;
+  author-owned, informal, reviewed sparingly, history after ship.
+- SkillsBench (arXiv 2602.12670) — already in this ledger; "Focused Skills
+  with at most three modules outperform larger or exhaustive bundles".
+- RAG-MCP (arXiv 2505.03275) and "How Many Tools Should an LLM Agent See?"
+  (arXiv 2605.24660, measured on Claude Sonnet 4.6): tool-count effects on
+  selection accuracy (13.62% → 43.13%; 87.1% → 93.1%), from registries of
+  dozens to thousands of tools, so directional only for 1 versus 2 skills.
+- Community guides on splitting skill descriptions (hackernoon ai-coding
+  tip 035; dak-dev skill pitfalls) — tier 3, unverified: split when
+  triggers diverge; state the boundary in each description.
