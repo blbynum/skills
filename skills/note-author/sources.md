@@ -17,6 +17,27 @@ wording and dates.
   memory — corroborates the note-author skill's design, establishes nothing
   beyond it.
 
+Moved from the shared ledger on 2026-11-03; the entry keeps its original
+wording and dates.
+
+### note-author skill, ste100 rule — ASD-STE100 official site (About, FAQ, Issue 9 PDF)
+- URLs: https://www.asd-ste100.org/about_STE.html ,
+  https://www.asd-ste100.org/STE_faq.html ,
+  https://www.asd-ste100.org/assets/files/ASD-STE100_ISSUE9.pdf
+- Last verified: 2026-08-15 (FAQ re-fetched for the ste100 rule pass;
+  About and Issue 9 counts via fetched search summary)
+- Supports: current issue is Issue 9 (January 2025), an international
+  standard as of Issue 9; Issue 10 scheduled January 2028; 53 writing rules
+  in 9 sections; ~900 approved words, one meaning and one part of speech
+  each; ~1,200 non-approved words with suggested replacements; 20-word
+  maximum sentences in procedures and 25-word in descriptive text;
+  imperative, active-voice procedural language; scope is procedural and
+  descriptive maintenance text; the FAQ quote "not intended for
+  general-purpose writing" is verbatim; the FAQ also says many STE
+  principles can be adopted in other writing contexts, which grounds the
+  ste100 rule's user-chosen scope (documentation plus technical
+  explanations in chat, but not casual conversation or code).
+
 ## doc-author, outline, notes — notes-versus-docs pass (2026-11-02)
 
 Subject-matter sources for the pass that rewrote doc-author as the one
